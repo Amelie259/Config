@@ -31,7 +31,9 @@ TEMPERATURE_ACTUELLE=$(head -n 1 "$FICHIER_BRUT" | tr -d '[:space:]')
 
 TEMPERATURE_DEMAIN=$(tail -n 1 "$FICHIER_BRUT" | tr -d '[:space:]')
 
-
+# Obtenir la date et l'heure actuelles
+DATE_FORMATTEE=$(date +%Y-%m-%d)
+HEURE_FORMATTEE=$(date +%H:%M)
 
 
 
