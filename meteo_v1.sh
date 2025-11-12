@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Vérification si un argument à été fourni
-if [ - z "$1" ];then
+if [ -z "$1" ];then
 	echo "Usage: $0<Ville>"
 	exit 1
 fi
@@ -33,8 +33,5 @@ TEMPERATURE_DEMAIN=$(tail -n 1 "$FICHIER_BRUT" | tr -d '[:space:]')
 
 
 
-# Obtenir la date et l'heure actuelles
 
-DATE_FORMATTEE=$(date +%Y-%m-%d)
 
-HEURE_FORMATTEE=$(date +%H:%M)
