@@ -11,6 +11,8 @@ Une fois dans le bon dossier, j'ai ouvert le planificateur de tâches avec cront
 Ma tâche cron est programmée pour s'exécuter toutes les minutes : elle se place d'abord dans le dossier de mon projet, 
 puis lance mon script météo pour Toulouse en mode debug, et enfin enregistre tous les résultats dans un fichier log pour que je puisse vérifier si tout fonctionne.
 
+" 0 * * * * cd /mnt/c/Users/pc/Config/Extracteur_Meteo_Projet && /bin/bash -x ./Extracteur_Meteo.sh Toulouse >> /tmp/cron_debug.log 2>&1 "
+
 Pour terminer, j'ai utilisé sudo service cron status pour m'assurer que le service était bien activé et qu'il fonctionnait 
 correctement en arrière-plan, ready à exécuter mon script automatiquement selon la planification définie.
 
