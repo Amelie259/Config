@@ -34,7 +34,7 @@ DATE_FORMATTEE=$(date +%Y-%m-%d)
 HEURE_FORMATTEE=$(date +%H:%M)
 
 # Format texte
-LIGNE_TEXTE="${DATE_FORMATTEE} - ${HEURE_FORMATTEE} - ${VILLE} : ${TEMP_ACTUELLE}°C - ${TEMP_DEMAIN}°C - Vent: ${VENT} km/h - Humidité: ${HUMIDITE}% - Visibilité: ${VISIBILITE} km"
+LIGNE_TEXTE="${DATE_FORMATTEE} - ${HEURE_FORMATTEE} - ${VILLE} : ${TEMP_ACTUELLE} - ${TEMP_DEMAIN} - Vent: ${VENT} - Humidité: ${HUMIDITE} - Visibilité: ${VISIBILITE}"
 
 # Format JSON
 JSON_CONTENT=$(cat <<EOF
@@ -59,7 +59,7 @@ echo "$LIGNE_TEXTE" >> "meteo_${DATE_FORMATTEE}.txt"
 echo "$JSON_CONTENT" >> "$FICHIER_SORTIE_JSON"
 echo "$JSON_CONTENT" >> "meteo_${DATE_FORMATTEE}.json"
 # Confirmation
-echo
+echo "Ligne ajoutée : $LIGNE_TEXTE"
 echo "Données enregistrées en texte et JSON."
 echo "Fichier général texte : $FICHIER_SORTIE"
 echo "Fichier journalier texte : meteo_${DATE_FORMATTEE}.txt"
