@@ -1,7 +1,7 @@
 # Lien Vers Notre Rapport
 https://miagefr-my.sharepoint.com/:w:/g/personal/amelie_martel_toulouse_miage_fr/IQBpGiKsGJRDSY9shDeHry2WAYthJezQ28c3wIU608Yczv8?e=nGEfqw
 
-# Config
+# Notre Projet
 
 Notre projet consiste à développer un programme en langage Shell qui récupère automatiquement les données météorologiques d'une ville. Pour utiliser le script,
 il suffit d'exécuter la commande apres avoir ouvrir le dossier Extracteur_Meteo_Projet : ./Extracteur_Meteo_Variante.sh suivie du nom d'une ville, par exemple ./Extracteur_Meteo_Variante.sh Paris.
