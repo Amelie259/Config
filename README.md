@@ -1,9 +1,9 @@
 # Config
 
 Notre projet consiste à développer un programme en langage Shell qui récupère automatiquement les données météorologiques d'une ville. Pour utiliser le script,
-il suffit d'exécuter la commande ./Extracteur_Meteo.sh suivie du nom d'une ville, par exemple ./Extracteur_Meteo.sh Paris.
- 
+il suffit d'exécuter la commande ./Extracteur_Meteo_Variante1.sh suivie du nom d'une ville, par exemple ./Extracteur_Meteo.sh Paris.
 Si aucun argument n'est fourni, le script utilise automatiquement Toulouse comme ville par défaut. 
+ 
 Concrètement, le script se connecte au service wttr.in, extrait la température actuelle et celle prévue pour le lendemain, 
 puis enregistre ces informations de manière organisée dans un fichier texte.
 Pour automatiser l'exécution périodique du script, nous avons configuré une tâche cron comme expliqué ci-dessous. 
